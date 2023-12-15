@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <main>
+        <h1>Mehrwertsteuer-Rechner</h1>
+        <form>
+            <section>
+                <h2>Was soll berechnet werden?</h2>
+                <input type="radio" name="plusMinus" id="Plus" checked onchange="changer()">
+                <option value="">Mehrwertsteuer aufschlagen (Netto zu Brutto)</option>
+                <input type="radio" name="plusMinus" id="Minus" onchange="changer()">
+                <option value="">Mehrwertsteuer abziehen (Brutto zu Netto)</option>
+            </section>
+            <section>
+                <h2>Mehrwertsteuersatz</h2>
+                <input type="radio" name="satz" id="normal" checked>
+                <option id="normalval" value="1.19">19%</option>
+                <input type="radio" name="satz" id="weniger">
+                <option id="wenigerval" value="1.07">7%</option>
+            </section>
+            <section>
+                <div>
+                    <p id="changeme">Nettobetrag (Preis ohne Mehrwersteuer) in Euro<span>*</span></p>
+                    <input type="text" id="rechnerInput" required>
+                </div>
+                <input type="submit" value="Berechnen" onclick="calc(); return false">
+            </section>
+            <section>
+                <h2 class="blue">Ergebnis</h2>
+                <div>
+                    <h2>Mehrwertsteuerbetrag</h2>
+                    <p id="betrag">€</p>
+                </div>
+                <div>
+                    <h2 id="change2">Bruttobetrag (Endpreis)</h2>
+                    <p id="endpreis">€</p>
+                </div>
+            </section>
+        </form>
+    </main>
     
     <script src="./assets/javascript/main.js"></script>
 </body>
