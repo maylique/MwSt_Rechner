@@ -1,6 +1,108 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins';
+    border: none;
+    outline: none;
 }
+
+html {
+    background-color: black;
+    color: black;
+    text-shadow: 0 0 10px #516395;
+    text-align: center;
+}
+
+main {
+    background: linear-gradient(to top right, #614385, #516395);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: linear-gradient(to bottom left, #ea8d8d, #a890fe);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px #ea8d8d;
+    outline: 0.1px solid white;
+}
+
+h1 {
+    border-bottom: 1px solid #614385;
+    border-top: 1px solid #516395;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+h2 {
+    padding: 0.5rem;
+}
+
+span {
+    color: #614385;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.flex option {
+    padding-left: 1rem;
+}
+
+input[type=text]{
+    padding: 0.3rem 2.2rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: #516395;
+    color: white;
+    text-align: center;
+}
+
+input[type=submit]{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #614385;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input[type=submit]:hover{
+    transition-duration: 0.5s;
+    background-color: #516395;
+    transform: scale(1.1);
+}
+
+.blue {
+    color: #ea8d8d;
+    text-shadow: 0 0 10px black;
+    padding: 2rem 0 1rem;
+}
+
+.yo {
+    padding: 0.3rem 0 1.5rem;
+}
+
+#betrag, #endpreis {
+    border-bottom: 1px solid #614385;
+    margin: 0 0 1rem;
+}
+
+
+
+
 
